@@ -51,6 +51,16 @@
 	document.write('<hr>' + ('100' === 100));//false
 	document.write('<hr>' + (100 != 200));//true
 	
+	//using logical operators
+		//logical operators will use when there is a need for validate multiple comparison operators
+	//using AND operator - all the inputs need to be true for and operator to set final result TRUE.
+	document.write('<hr> using AND' + ((count1 > count2) && (count1 < count2)));//false
+	document.write('<hr> using AND' + ((100 != 200) && (count1 < count2)));//true
+	//using OR operator - either one input need to true for or operator to set final result TRUE
+	document.write('<hr> using OR' + ((count1 > count2) || (count1 < count2)));//true
+	document.write('<hr> using OR' + ((100 != 200) || (count1 < count2)));//true
+	//NOT operator will convert the resutl into its opposit value
+	document.write('<hr> NOT operator ' + !((count1 > count2) && (count1 < count2)));
 	
 		
 	
