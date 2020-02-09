@@ -34,20 +34,34 @@
 	   }else{
 		 document.write('Odd number')
 	   }
+	
+	
 	//eg:provide grades (A,B,C,S,F) by checking given value
 	var mark = prompt('type your mark');
 	document.write('<br>');
-	if(mark >=75){
-	   	document.write('Grade is A');
-	 }else if(mark>=65){
-		document.write('Grade is B');
-	}else if(mark >= 55){
-		document.write('Grade is C');
-	}else if(mark>=45){
-		document.write('Grade is S')
-	}else{
-		document.write('Grade is F');
-	}
+	//check if the user provide a number inbetween 0 to 100
+	
+//	if(mark < 0 && mark > 100){
+	if(mark >=0 && mark<=100){
+			   if(mark >=75){
+				document.write('Grade is A');
+			 }else if(mark>=65){
+				document.write('Grade is B');
+			}else if(mark >= 55){
+				document.write('Grade is C');
+			}else if(mark>=45){
+				document.write('Grade is S')
+			}else{
+				document.write('Grade is F');
+			}
+	   
+	   }else{
+		   alert('mark should be inbtween 0 to 100');
+		   
+	   }
+	
+	
+	
 	
 	
 	
