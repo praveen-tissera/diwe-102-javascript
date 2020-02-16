@@ -93,9 +93,56 @@ document.write('Looping with other loop <hr>');
 			document.write('==============Round complete=============<br>');
 		}
 		
+document.write('<hr>');
+		for(var d=1;d<=5;d=d+1){
+			for(var e=0;e<d;e=e+1){
+				document.write('*');
+			}
+		document.write('<br>');
+		}
+		
+		for(var d=5;d>=1;d=d-1){
+			for(var e=0;e<d;e=e+1){
+				document.write('*');
+			}
+		document.write('<br>');
+		}
+		
+		document.write('<hr> array looping <br>');
 		
 		
+		var countries = new Array();
+		countries[0] = 'Sri Lanka';
+		countries[1] = 'India';
+		countries[2] = 'canada';
+		countries[3] = 'japan';
 		
+		for(var i=0;i<countries.length; i=i+1){
+			document.write('array index ' + i + ' has country -' + countries[i] + '<br>');
+		}
+		
+		document.write("<hr>");
+		
+		//for..in loop
+		//for..in use to array looping and no need of providing starting ending or pattern for this loop. this is use in object looping as well
+		
+		
+		for(var index in countries){
+			document.write('array index ' + i + ' has country -' + countries[index] + '<br>');
+		}
+		
+		//object looping
+		
+		var myObj = {
+			sriLanka:1,
+			india:10,
+			china:60000
+		}
+		
+		for(var objIndex in myObj){
+			console.log(objIndex);
+			document.write('patiant count ' + myObj[objIndex] + '<br>');
+		}
 	</script>
 	
 </body>
