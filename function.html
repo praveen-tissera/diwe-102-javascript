@@ -30,18 +30,41 @@
 //		}
 //		
 		//getting inputs to the function
+//		function count(arg1,arg2){
+//			var count1 = arg1;
+//			var count2 = arg2;
+//			var total = count1+count2;
+//			document.write(total + '<br>');
+//		}
+		
+		
+		//function should pass the result to the owner who asked to execute
+		
 		function count(arg1,arg2){
 			var count1 = arg1;
 			var count2 = arg2;
 			var total = count1+count2;
-			document.write(total + '<br>');
+			//document.write(total + '<br>');
+			return total;
 		}
-		
+		function average(arg1){
+			var finalAverage = arg1/2;
+			return finalAverage;
+			
+		}
 		
 		//run this function 2 times
 		
-		count(100,20);
-		count(200,1);
+		document.write('total of two value - ' + count(100,20));
+		console.log('answer is - ' +count(200,1) );
+		document.write('<hr>');
+		
+		var myTotal = count(30,50);
+		document.write('Total is - ' + myTotal);
+		document.write('Average is ' + average(myTotal));
+		
+		
+		
 		
 	</script>
 </body>
