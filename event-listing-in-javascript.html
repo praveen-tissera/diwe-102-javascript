@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	
+	
+<label id="login-link"> login 123 </label>
+<hr>
+<input type="text" id="txt-field" onKeyUp="typing();"><br>
+<label id="lbl-field"></label><hr>
+</body>
+	<script>
+//	alert('hello');
+	//create a reference to the lable tag
+	var token = document.getElementById('login-link');
+	//accesing property in document object
+	document.write('lable value is - ' +token.innerHTML);
+	function typing(){
+		var textInput = document.getElementById('txt-field');		
+		var lblField = document.getElementById('lbl-field');
+		//collect input field valuee and assign as a value to the lable tag
+		lblField.innerHTML =textInput.value;
+		
+	}
+	
+	
+	</script>
+	
+</html>
