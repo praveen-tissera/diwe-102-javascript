@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<h1>Where do you want to go?</h1>
+	<h2>Travel Destinations</h2>
+	<p>Plan your next adventure.</p>
+	<ul id="destinations">
+	  <li>Rome</li>
+	  <li>Paris</li>
+	  <li class="promo">Rio</li>
+		<li>Tokyo</li>
+		
+	</ul>
+	
+</body>
+	<script>
+		$(document).ready(function(){
+			//use jquery define function to find html tags			
+			$('#destinations').find('li').css('color','green');
+			$('li').first().css('background-color','#F00');
+			$('li').last().css('background-color','#0f0');
+			$('li').first().next().next().css('font-size','28px');
+			$('li').last().prev().css('font-weight','bold');
+			//navigating from child to parent
+			$('li').first().parent().css('border','red 2px solid');
+		});
+		
+	</script>
+</html>

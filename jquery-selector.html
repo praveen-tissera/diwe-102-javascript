@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<h1>Where do you want to go?</h1>
+	<h2>Travel Destinations</h2>
+	<p>Plan your next adventure.</p>
+	<ul id="destinations">
+	  <li>Rome</li>
+	  <li>Paris</li>
+	  <li class="promo">Rio</li>
+		<li>
+			<ul>
+				<li id="france">
+					Country France
+				</li>
+			</ul>
+		</li>
+	</ul>
+	
+	<ul id="country">
+	  <li>Japan</li>
+	  <li>China</li>
+	  <li class="ads">Canada</li>
+		<li>
+			Sri Lanka
+		</li>
+	</ul>
+	<script>
+	
+		$(document).ready(function(){
+			//select html tag by using tag name
+			//$('li').text('Colombo');
+			$('.promo').text('India');
+			$('#destinations').css('color','red');
+			$('#destinations li').css('font-size','28px');
+			$('.promo,#france').css('text-decoration','underline');
+			
+			
+			//adding styles to the second list
+			
+			$('#country li:even').css('background-color','yellow');
+			$('#country li:odd').css('background-color','#ccc');
+		});
+	</script>
+</body>
+</html>
